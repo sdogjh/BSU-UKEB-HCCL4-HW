@@ -16,7 +16,6 @@ cout << " Enter a number: " << endl;
 cin >> num;
 
 rem = num - (num/2)*2; 
-//i used the traditional division method on paper to get the remainder, this is just the same as the % operator.
 
 if (rem == 0) 
   
