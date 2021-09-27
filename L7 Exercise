@@ -1,0 +1,42 @@
+# Sept-27-2021-L7ExercisesProblems
+only in .txt
+
+//--------------------------LETTER CHECKER--------------------------------
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void runProgramAgain();  //function to rerun program again if user wants to
+
+int main(){
+ int grade;
+ char again; 
+ 
+ do{ // to make program run again
+ 
+ cout << "Enter a grade number to view the grade boundaries: ";
+ cin >> grade;
+ 
+if (grade >= 70 )
+cout << "that is an A grade";
+else if ( grade >= 60 && grade <= 69)
+cout << "that is a B grade";
+else if ( grade >= 50 && grade <= 59)
+cout <<"That is a C grade";
+else if ( grade >= 40 && grade <= 49)
+cout <<"That is a D grade";
+else if ( grade < 40)
+cout <<"that is an F grade";
+cout << endl;
+cout << endl;
+cout << "Would you like to run the program again? (y/n):";
+    cin >> again;
+    }while(again=='y');
+    cout << "Press any key to continue." << endl;
+    cin.ignore(1);
+}
+
+
+
