@@ -64,10 +64,10 @@ int main()
   }
   
   if (input == 'y' && musicalFriend == true){
-      if (strInput == friendPlaysGuitar || strInput == friendPlaysDrum){
+      if (strInput == friendPlaysGuitar || strInput == friendPlaysDrum){  //will identify if the user input matches the string in the variable.
           cout << "Great we can start a band!";
       }else{
-  cout << "Im only asking if the friend can play a guitar or drum. I guess i'll consider it. The friend will play the " << strInput << endl;
+  cout << "Im only asking if the friend can play a guitar or drum. I guess i'll consider it. The friend will play the " << strInput << endl;   //will only apply if user input doesnt match string
   }
   }else{
   cout << "We cant form a band. Sadge. ";
