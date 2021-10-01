@@ -1,221 +1,251 @@
-# Sept-26-2021-L6ExercisesProblems
+# Sept-27-2021-L7ExercisesProblems
 only in .txt
 
-//--------------------------ODDS OR EVEN--------------------------------
+//--------------------------MARK MY WORDS (COMPOUND CONDITION)--------------------------------
 
-#include &lt;iostream>
+#include <iostream>
+  
+#include <string>
 
 using namespace std;
 
-int main(){
-
-int num, rem;
-
-cout << " Enter a number: " << endl;
-  
-cin >> num;
-
-rem = num - (num/2)*2; 
-
-if (rem == 0) 
-  
-cout << " number is even " << endl;
-  
-else
-  
-cout << " number is odd " << endl;
-}
-  
-//----------------------------------------NUMBER CHECKER---------------------------------
-  
-#include &lt;iostream>
-  
-using namespace std;
+void runProgramAgain();  //function to rerun program again if user wants to
 
 int main(){
-
-int num;
-
-cout << "Enter a number: " << endl;
   
-cin >> num;
-
-if (num < 0)
-            
-cout << " number is negative" << endl;
-                                     
-else if ( num > 0)
+ int grade;
   
-cout << " number is positive" << endl;
+ char again; 
+ 
+ do{ // to make program run again
+ 
+ cout << "Enter a grade number to view the grade boundaries: ";
   
-else
+ cin >> grade;
+ 
+if (grade >= 70 )
   
-cout << "the number is zero" << endl;
-
-}
-
-//------------------------PROFIT OR LOSS----------------------------
+cout << "that is an A grade";
   
-#include &lt;iostream>
-
-using namespace std;
-
-int main(){
-
-int purchasePrice, salePrice, ans, nans;
-
-cout << "Enter Purchase Price" << endl;
-  
-cin >> purchasePrice;
-  
-cout << "Enter Sale Price" << endl;
-  
-cin >> salePrice;
-
-ans = purchasePrice - salePrice;
-
-if (ans < 0){
-             
-nans = -ans; // this gets rid of the minus sign on the profit result.
-             
-cout << " profited " << nans << endl;
-}
+else if ( grade >= 60 && grade <= 69)
                                     
-else if ( ans > 0 ){
+cout << "that is a B grade";
+        
+else if ( grade >= 50 && grade <= 59)
+                                    
+cout <<"That is a C grade";
+        
+else if ( grade >= 40 && grade <= 49)
+                                    
+cout <<"That is a D grade";
+        
+else if ( grade < 40)
   
-cout << " lossed " << ans << endl;
+cout <<"that is an F grade";
+  
+cout << endl;
+  
+cout << endl;
+  
+cout << "Would you like to run the program again? (y/n):";
+  
+cin >> again;
+  
+}while(again=='y');
+  
+cout << "Press any key to continue." << endl;
+  
+cin.ignore(1);
+  
+}
+
+//--------------------------STARTING A BAND (NESTED-IF)--------------------------------
+  
+// Example program
+
+#include <iostream>
+  
+#include <string>
+
+using namespace std;
+  
+int main()
+  
+{
+  
+bool musicalFriend = true;
+  
+string friendPlaysGuitar = "guitar";
+  
+string friendPlaysDrum = "drums";
+  
+string strInput;
+  
+char input;
+ 
+  
+cout <<"Do you have a musical friend? y/n? ";
+  
+cin >> input;
+  
+if (input == 'n'){  //no condition made cuz its down below
   
 }
   
 else{
   
-cout << "no profit or loss" << endl;
+cout <<"Which instrument does your friend play? A guitar or drums? ";
+  
+cin >> strInput;
   
 }
   
+if (input == 'y' && musicalFriend == true){
+  
+if (strInput == friendPlaysGuitar || strInput == friendPlaysDrum){  //will identify if the user input matches the string in the variable.
+  
+cout << "Great we can start a band!";
+  
+}else{
+  
+cout << "Im only asking if the friend can play a guitar or drum. I guess i'll consider it. The friend will play the " << strInput << endl;   //will only apply if user
+  
+input doesnt match string
+  
 }
   
-//---------------------------------------NAME THAT SHAPE (IF VERSION)---------------------------------
+}else{
   
-#include &lt;iostream>
+cout << "We cant form a band. Sadge. ";
   
-using namespace std;
- 
-int main () {
-    
-   int shape;
-   
-   cout <<"Enter a number to determine shape ";
-  
-   cin >> shape;
+}
+}
+     
 
-   if ( shape == 3)
-  
-   cout << " that is a Triangle " << endl;
-  
-   else if ( shape == 4)
-  
-   cout << " that is a Square " << endl;
-  
-   else if ( shape == 5)
-  
-   cout << " that is a Pentagon " << endl;
-  
-   else if ( shape == 6)
-  
-   cout << " that is a Hexagon " << endl;
-  
-   else if ( shape == 7)
-  
-   cout << " that is a Heptagon " << endl;
-  
-   else if ( shape == 8)
-  
-   cout << " that is an Octagon " << endl;
-  
-   else if ( shape == 9)
-  
-   cout << " that is a Nonagon " << endl;
-  
-   else if ( shape == 10)
-  
-   cout << " that is a Decagon " << endl;
-  
-   else
-  
-   cout << " Invalid shape " << endl;
-}
-  
-//-------------------------------NAME THAT SHAPE (SWITCH CASE VERSION)--------------------------
-  
- #include &lt;iostream>
-  
-using namespace std;
- 
-int main () {
-    
-   int shape;
-   
-   cout <<"Enter a number to determine shape ";
-  
-   cin >> shape;
+//--------------------------KILLING TIME (NESTED-IF)--------------------------------
+// Example program
 
-   switch(shape) {
+#include <iostream>
   
-      case 3 :
+#include <string>
+
+using namespace std;
   
-         cout << "that is a Triangle" << endl; 
+int main()
+{
   
-         break;
+int money = 5; 
   
-      case 4 :
+int minsNeededForFriendToCome = 15;
   
-         cout << " that is a Square " << endl; 
+cout << "It is 12 AM in the midnight. You are in Dubai Mall waiting for a friend. You suddenly recieved a text message from your friend." << endl;
   
-         break;
+cout <<"\n\n";
   
-      case 5 :
+cout << "The message said that";
   
-         cout << "that is a  Pentagon " << endl; 
+if (minsNeededForFriendToCome > 14) {
   
-         break;
+if (money >= 5) {
   
-      case 6 :
+cout << " your friend is arriving in 15 minutes or maybe even more than that so might as well buy a coffee." << endl;
   
-         cout << " that is a Hexagon " << endl; 
+} else {
   
-         break;
+cout << " your friend is arriving in 15 minutes or so, and I dont have enough money to buy a coffee." << endl;
   
-      case 7 :
+cout <<"\n\n";
   
-         cout << " that is a Heptagon " << endl; 
+cout << " So Im gonna go for a walk around the mall." << endl;
   
-         break;
-  
-      case 8 :
-  
-         cout << " that is an Octagon " << endl; 
-  
-         break;
-  
-      case 9 :
-  
-         cout << " that is a Nonagon " << endl; 
-  
-         break;
-  
-      case '10' :
-  
-         cout << " that is a Decagon " << endl; 
-  
-         break;
-  
-      default:
-  
-      cout << " Shape is invalid " << endl;
-  
-   }
-  
-   return 0;
-   
 }
+  
+} else {
+  
+cout << " your friend will arrive in less than 15 minutes. Might as well sit in the food court and wait." << endl;
+  
+}
+}
+
+//--------------------------EARTHQUAKE DESCRIPTOR (NESTED-IF)--------------------------------
+// Example program
+  
+#include <iostream>
+  
+#include <string>
+
+using namespace std;
+  
+int main() {
+    
+double input; 
+  
+cout << "WARNING!!! AN EARTHQUAKE HAS BEEN DETECTED IN YOUR AREA. PLEASE ENTER THE MAGNITUDE TO CALCULATE THE DESCRIPTOR OF THE EARTHQUAKE: ";
+  
+cin >> input;
+  
+if (input >= 10){
+  
+cout << "Magnitude " << input << ":" << " DESCRIPT AS METEORIC";
+}
+  
+else{
+  
+    if (input >= 8.0 && input < 10.0){
+                                      
+cout << "Magnitude " << input << ":" << " DESCRIPT AS GREAT";
+                                        
+}
+                                        
+else{
+                                        
+    if (input >= 7.0 && input < 8.0){
+                                     
+        cout << "Magnitude " << input << ":" << " DESCRIPT AS MAJOR";
+                                                
+}
+                                                
+else{
+                                                
+    if (input >= 6.0 && input < 7.0){
+                                     
+        cout << "Magnitude " << input << ":" << " DESCRIPT AS STRONG";
+}
+                                                
+else{
+                                                
+    if (input >= 5.0 && input < 6.0){
+                                     
+        cout << "Magnitude " << input << ":" << " DESCRIPT AS MODERATE";
+                                                
+}
+                                                 
+else{
+                                                
+    if (input >= 4.0 && input < 5.0){
+                                     
+        cout << "Magnitude " << input << ":" << " DESCRIPT AS LIGHT";
+                                               
+}
+                                                
+else{
+                                                
+    if (input >= 3.0 && input < 4.0){
+                                     
+        cout << "Magnitude " << input << ":" << " DESCRIPT AS MINOR";
+                                                
+}
+                                                
+else{
+                                                
+    if (input >= 2.0 && input < 3.0){
+                                     
+        cout << "Magnitude " << input << ":" << " DESCRIPT AS VERY MINOR";
+                                                
+}
+                                                
+else{
+                                                
+    cout << "Magnitude " << input << ":" << " DESCRIPT AS MICRO";
+                                            
+}}}}}}}}}
