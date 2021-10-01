@@ -3,9 +3,9 @@ only in .txt
 
 //--------------------------MARK MY WORDS (COMPOUND CONDITION)--------------------------------
 
-#include <iostream>
+#include &lt;iostream>
   
-#include <string>
+#include &lt;string>
 
 using namespace std;
 
@@ -63,9 +63,9 @@ cin.ignore(1);
   
 // Example program
 
-#include <iostream>
+#include &lt;iostream>
   
-#include <string>
+#include &lt;string>
 
 using namespace std;
   
@@ -125,9 +125,9 @@ cout << "We cant form a band. Sadge. ";
 //--------------------------KILLING TIME (NESTED-IF)--------------------------------
 // Example program
 
-#include <iostream>
+#include &lt;iostream>
   
-#include <string>
+#include &lt;string>
 
 using namespace std;
   
@@ -170,9 +170,9 @@ cout << " your friend will arrive in less than 15 minutes. Might as well sit in 
 //--------------------------EARTHQUAKE DESCRIPTOR (NESTED-IF)--------------------------------
 // Example program
   
-#include <iostream>
+#include &lt;iostream>
   
-#include <string>
+#include &lt;string>
 
 using namespace std;
   
