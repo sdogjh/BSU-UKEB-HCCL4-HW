@@ -3,7 +3,7 @@ only in .txt
 
 //--------------------------REMAIN POSITIVE WHILE LOOP--------------------------------
 
-    #include &lt;iostream>
+    #include <iostream>
   
     using namespace std;
 
