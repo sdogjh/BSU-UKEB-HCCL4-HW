@@ -1,7 +1,7 @@
 # Oct-29-2021-L9ExercisesProblems
 only in .txt
 
-//--------------------------REMAIN POSITIVE WHILE LOOP--------------------------------
+//--------------------------REMAIN POSITIVE WHILE LOOP----------------------------------
 
     #include <iostream>
   
@@ -39,7 +39,7 @@ only in .txt
     }
     }
 
-//--------------------------POINTLESS BOX--------------------------------
+//--------------------------POINTLESS BOX----------------------------------------------------
 
     #include <iostream>
     #include <stdexcept> //just in case the stdlimits is not working
@@ -71,7 +71,7 @@ only in .txt
     }
     }}
     
-//--------------------------IMPROVEMENT DO WHILE LOOP--------------------------------
+//--------------------------IMPROVEMENT DO WHILE LOOP------------------------------------------
 
     #include <iostream> 
     using namespace std; 
@@ -85,8 +85,28 @@ only in .txt
     cout << "Exiting Program....";
     return 0;
     }
+    
+//--------------------------BRUTE FORCE ATK I---------------------------------------------------
 
-//--------------------------BRUTE FORCE ATK (BREAK STATEMENT)--------------------------------
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+    string pass;
+    
+    
+    cout << "Enter your Password: ";
+    cin >> pass;
+    
+    while (pass != "246"){;
+    cout << "Wrong password, Try again. \n\nEnter your Password: ";
+    cin >> pass;
+    }
+    cout << "Access granted. ";
+    }
+    
+
+//--------------------------BRUTE FORCE ATK II (BREAK STATEMENT)--------------------------------
 
     #include <iostream>
     #include <string>
@@ -119,3 +139,31 @@ only in .txt
     }
     }
     }
+//--------------------------LOOPY------------------------------------------------------
+
+    #include <iostream>
+    #include <stdexcept> //just in case the stdlimits is not working
+    #include <limits> //just in case the stdlimits is not working
+    using namespace std; 
+    int main() {
+    
+    
+    int myInt; 
+    int counter;
+    
+    cout << "Enter any number and I will count it from bottom to top: ";
+    cin >> myInt;
+    if (std::cin.fail())
+    {
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cout << "Cannot identify number. Exiting Program";
+    }
+    
+    else {
+    while( counter != myInt){
+    counter++;
+    cout << counter << "\n";
+    }
+    return 0;
+    }}
