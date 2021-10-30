@@ -569,3 +569,102 @@ break;
 }
 
 }
+
+-------------------FUEL ME UP(GROUP WORK)--------------------------------------
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int lit;
+    cout << "How many liters of fuel do you need sir/maam?" << endl;
+    cin >> lit;
+
+
+
+    if (lit != 0)
+    {
+        cout << "Which type of fuel you would like to use? (P for Petrol/D for Diesel): ";
+        char fuel;
+        cin >> fuel;
+
+        switch (fuel)
+        {
+        case 'p':
+        case 'P':
+        {
+            cout << "You have chosen Petrol" << endl;
+            double cp;
+
+            cp = lit * 2.5;
+            cout << "The price of your fuel is: " << cp << endl;
+            break;
+        }
+        case 'D':
+        case 'd':
+        {
+            cout << "You have chosen Diesel" << endl;
+            double dp;
+
+            dp = lit * 5;
+            cout << "The price of your fuel is: " << dp << endl;
+            break;
+
+            break;
+        }
+
+        default:
+        {
+            cout << "Invalid input";
+            break;
+        }
+    }
+    }
+
+    else {
+        cout << "Invalid Input" << endl;
+    }
+
+}
+
+-------------------FAHR TO CEL VICE VERSA (GROUP WORK)--------------------------------------
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double val;
+    cout << "What is your temperature? Enter the value in numbers: ";
+    cin >> val;
+    char temp;
+
+    if (val != 0)
+    {
+        cout << "What is your unit of temperature? C or F: " << endl;
+        cin >> temp;
+        double fahr = (val * 1.8) + 32;
+        double cel = (val - 32) * 0.5556;
+
+        switch (temp)
+        {
+        case 'f':
+        case 'F':
+            cout << "Your temperature in Celsius: " << cel << endl;
+
+            break;
+
+        case 'c':
+        case 'C':
+            cout << "Your temperature in Fahrenheit: " << fahr << endl;
+
+            break;
+
+        default:
+
+            cout << "Invalid Input" << endl;
+        }
+    }
+    else
+        cout << "Invalid Input" << endl;
+}
