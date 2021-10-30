@@ -23,19 +23,19 @@ only in .txt
     }
 
 
-//--------------------------TIME REVERSE TABLE WHILE LOOP--------------------------------
+//--------------------------TIMES 9 REVERSE TABLE WHILE LOOP--------------------------------
   
     #include <iostream>
     using namespace std;
     int main() {
     
-    int num = 108; 
+    int num = 108;
     
-    while (num >= 0) { 
+    while (num >= 9) { 
     
         cout << "\n" << num;
 
-        num--;
+        num-= 9;
     }
     }
 
@@ -73,16 +73,49 @@ only in .txt
     
 //--------------------------IMPROVEMENT DO WHILE LOOP--------------------------------
 
-    #include <iostream>
+    #include <iostream> 
+    using namespace std; 
+    int main() {
+    char input; 
+    do{
+    cout << "Would you like to Quit (Y/N): ";
+    cin >> input;
+    
+    }while( (input != 'Y') && (input == 'N') || (input != 'y') && (input == 'n') );
+    cout << "Exiting Program....";
+    return 0;
+    }
 
+//--------------------------BRUTE FORCE ATK (BREAK STATEMENT)--------------------------------
+
+    #include <iostream>
+    #include <string>
+    
     using namespace std;
     
-    int main() {
-    char input;
-    do{
-    cout << "Would you like to Quit (Y/N)?" <<
-    endl;
-    cin >> input;
-    }while( (input != 'Y') && (input != 'N') );
-    return 0;
+    int main ()
+    {
+    string password;
+    int attempt = 1;
+    
+    while ( attempt < 6 )
+    {
+    cout << "Enter your password: ";
+    cin >> password;
+    
+    if (  password != "246" )
+    {
+    cout << "Incorrect password combination. Please try again" << "(" << attempt << ").\n" ;
+    
+    attempt++;
+    if (attempt == 6){
+    cout << "Access denied, locking account.";}
+    }
+    
+    else
+    {
+    cout << "Access granted." << endl;
+    break;
+    }
+    }
     }
