@@ -169,6 +169,7 @@ only in .txt
     }}
 
 --------------------------LOOPY (VISUAL STUDIO VERSION IN CASE ITS NOT WORKING)---------------------
+
 	#include <iostream>
 	//#include <stdexcept> //just in case the stdlimits is not working
 	//#include <limits> //just in case the stdlimits is not working
