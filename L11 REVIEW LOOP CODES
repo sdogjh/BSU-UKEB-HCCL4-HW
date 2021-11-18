@@ -1,4 +1,4 @@
-/*cin.fail debug fix WHILE LOOP
+/*cin.fail DEBUG FIX WHILE LOOP
 #include <iostream>
 #include <string>
 using namespace std;
@@ -20,8 +20,9 @@ int main()
 	}
 }
 */
-
-/* //DESCENDING STARS - FOR LOOP
+-------------------------DESCENDING STARS (FOR AND WHILE)------------------------------------
+//DESCENDING STARS - FOR LOOP
+/*
 #include <iostream>
 #include <string>
 
@@ -35,8 +36,8 @@ int main()
 		}
 		cout << endl;
 	}
-
-	//WHILE LOOP
+	*/
+//DESCENDING STARS- WHILE LOOP
 	int i = 5;
 	while (i > 0) {
 		int j = 0;
@@ -47,10 +48,11 @@ int main()
 		cout << endl;
 		i--;
 	}}
-*/
 
 
-/* //ASCENDING STAR- FOR LOOP
+-----------------ASCENDING STARS (FOR AND WHILE)----------------------------------
+//ASCENDING STAR- FOR LOOP
+/*
 #include <iostream>
 #include <string>
 
@@ -63,7 +65,9 @@ for (int i = 0; i < 6; i++) {
 	}
 	cout << endl;
 }}
-// WHILE LOOP
+*/
+//ASCENDING STAR- WHILE LOOP
+
 int k = 0;
 	while (k < 5) {
 		int l = 0;
@@ -74,9 +78,9 @@ int k = 0;
 		cout << endl;
 		k++;
 	}}
-*/
-
-/* FOR LOOP - COMBINED 2 TRIANGLE
+---------------------COMBINED TRIANGLE FOR LOOP----------------------------
+ //FOR LOOP - COMBINED 2 TRIANGLE
+ 
 #include <iostream>
 #include <string>
 
@@ -97,8 +101,9 @@ int main()
 	}
 
 }
-*/
-/*WHILE LOOP - COMBINED 2 TRIANGLE
+
+---------------------WHILE LOOP - COMBINED 2 TRIANGLE-------------------------------
+//WHILE LOOP - COMBINED 2 TRIANGLE
 #include <iostream>
 #include <string>
 using namespace std;
@@ -126,7 +131,7 @@ int main()
 	}
 }
 */
-
+-------------------FACTORIAL WHILE LOOP-------------------------------
 /* FACTORIAL
 #include<iostream>
 using namespace std;
@@ -141,5 +146,76 @@ int main()
 		i++;
 	}
 	cout<<"The Factorial of "<<n<<" is "<<j;
+	
+------------------FOR LOOP TABLE-------------------------------------
+//FOR LOOP TABLE
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+    int y;
+    cout<< "Enter a number you want the table of: " << endl;
+    cin >> y;
+    for (int x = 0; x <= 10; x++)
+    {
+    cout << y << " x " << x << " = " << y * x << endl;
+    }
+    }
+    }
+------------------------WHILE LOOP TABLE-------------------------------
+//WHILE LOOP TABLE
+#include <iostream>
+using namespace std;
+int main()
+{
+int x = 0;
+int y;
+	cout<< "Enter a number you want the table of: " << endl;
+	cin >> y;
+	while ( x < 10)
+	{
+	    x++;
+		cout << y << " x " << x << " = " << y * x << endl;
+	}
 }
-*/
+
+-------------FOR LOOP TABLE WITH WITH USER DECIDING WHEN THE TABLE WILL END-----------------
+//FOR LOOP TABLE WITH WITH USER DECIDING WHEN THE TABLE WILL END
+#include <iostream>
+using namespace std;
+int main()
+{
+int y;
+int z;
+	cout<< "Enter a number you want the table of: ";
+	cin >> y;
+	cout<< "Enter a number you want the table to end : ";
+	cin >> z;
+	for (int x = 0; x <= z; x++)
+	{
+		cout << y << " x " << x << " = " << y * x << endl;
+	}
+}
+
+-----------------------FOR LOOP DIVISIBLE BY 9-------------------------------------
+//FOR LOOP DIVISIBLE BY 9
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int x = 0;
+	do
+	{
+	    x++;
+		if (x % 9 == 0)
+		{
+			cout << x << " - Divisible by 9 \n";
+			}
+			else{
+			 cout << x << " - not divisible by 9 \n";   
+			}
+	}
+	while (x < 200);
+	cout << endl;
+}
