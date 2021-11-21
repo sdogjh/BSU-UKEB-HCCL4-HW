@@ -1,1 +1,45 @@
+# Nov-21-2021-L12ExercisesProblems
+only in .txt
 
+------------------------------------SUBJECT MARK ARRAY----------------------------------------------
+// Example program
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+    
+    int marks[5], sum = 0, average;
+    
+ 
+
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Enter "<< " marks for subject " << i << ": ";
+        cin >> marks[i];
+        sum += marks[i];
+    }
+
+    average = sum / 5;
+    cout << "The Average mark is : " << average;
+
+    return 0;
+}
+
+
+------------------------------------TIME TRAVEL DAYS OF MONTH ARRAY------------------------------------------
+// Example program
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+string month[12] = { "January", "February", "March", "April", "May", "June", "July", "August", 
+"September", "October", "November", "December" };
+
+     for (int i = 0; i < 12; i++) {
+         cout << month[i] << endl;
+     }
+ }
