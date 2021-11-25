@@ -2,6 +2,7 @@
     only in .txt
 
 ------------------------------------RANGED BASED FOR LOOP----------------------------------------------
+
     #include <iostream>
 
     using namespace std;
@@ -22,6 +23,7 @@
     }
 
 ------------------------------------AUTO KEY WORD------------------------------------------
+
     // Example program
     #include <iostream>
 
@@ -41,6 +43,7 @@
     }
     }
 ------------------------------------INPUT/OUTPUT ARRAY------------------------------------------
+
     #include <iostream>
     using namespace std;
 
@@ -65,6 +68,7 @@
     return 0;
     }
 ------------------------------------2D ARRAY------------------------------------------
+
     #include <iostream>
 
     using namespace std;
@@ -85,6 +89,7 @@
     }
     }
 ------------------------------------ARRAY ART------------------------------------------
+
     #include <iostream>
     #include <string>
     using namespace std;
