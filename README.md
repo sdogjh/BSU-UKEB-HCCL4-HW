@@ -1,199 +1,109 @@
-# Nov-07-2021-L10ExercisesProblems
-only in .txt
+    {# Nov-25-2021-L13ExercisesProblems
+    only in .txt
 
-//--------------------------FOR LOOP ODDS OR EVEN----------------------------------
-
+------------------------------------RANGED BASED FOR LOOP----------------------------------------------
     #include <iostream>
-    #include <string>
 
     using namespace std;
+
     int main()
     {
+    //RANGE BASED FOR LOOP
 
-    for (int i=20; i<=24; i++){
-    if( i % 2 == 0){
-    cout << i << " - even \n";
-    }
-    else{
-    cout << i << " -odd \n";
-    }
-    }
+    string courses[] = { "BSU CC", "BSU BA", "HNC CC", "HND" };
+    for (int i = 0; i < 4; i++){
+    cout << courses[i] << endl;
     }
 
-//--------------------------NESTED FOR LOOP 7STAR 7LINES----------------------------------
-		       
-    #include <iostream>
-    #include <string>
-
-    using namespace std;
-    int main()
-    {
-
-    for (int i=0; i<7; i++){
-    for(int j=0; j<7; j++){
-    cout << "*";
-    }
-    cout << endl;
-    }
-
-    }
- //--------------------------SOME COUNTING----------------------------------   
- 
-    /*#include <iostream>
-    #include <string>
-
-    using namespace std;
-    int main()
-    {
-    cout << "COUNTING FROM 0 to 50:";
-    for (int i=0; i<=50; i++){
-    cout <<"\n" << i;
-    }
-    }
+    /* OR CAN USE THIS INSTEAD OF TRADITIONAL FOR LOOP
+    for (auto course : courses) {
+    cout << course << endl;
     */
+    }
 
-    /*
+------------------------------------AUTO KEY WORD------------------------------------------
+    // Example program
     #include <iostream>
-    #include <string>
 
     using namespace std;
-    int main()
-    {
-    cout << "COUNTING FROM 50 to 0:";
-    for (int i=50; i >= 0; i--){
-    cout <<"\n" << i;
-    }
-    }
-    */
 
-    /*
-    #include <iostream>
-    #include <string>
-
-    using namespace std;
-    int main()
-    {
-    cout << "COUNTING FROM 30 to 50:";
-    for (int i=30; i<=50; i++){
-    cout <<"\n" << i;
-    }
-    }
-    */
-
-    /*
-    #include <iostream>
-    #include <string>
-
-    using namespace std;
-    int main()
-    {
-    cout << "COUNTING FROM 50 to 10 in DECREMENT of 2:";
-    for (int i=50; i>=10; i-= 2){
-
-    cout <<"\n" << i;
-    }
-    */     
-
-    #include <iostream>
-    #include <string>
-
-    using namespace std;
-    int main()
-    {
-    cout << "COUNTING FROM 100 to 200 in INCREMENTS OF 5:";
-    for (int i=100; i<=200; i+=5){
-
-    cout <<"\n" << i;
-    }
-    }
-    
- //--------------------------ITERATE THROUGH A WORD----------------------------------
- 
-    #include <iostream>
-    #include <string>
-
-    using namespace std;
-    int main()
-    {
-    string myWord = "ARSH";
-    for (int i=0; i<4; i++){
-
-    cout <<"\n" << myWord.at(i);
-    }
-    }
-//--------------------------FIND THE 9s---------------------------------------------
-			       
-    #include <iostream>
-    #include <string>
-
-    using namespace std;
     int main()
     {
 
-    for (int i=100; i<=200; i++){
-    if( i % 9 == 0){
-    cout << i << " - Divisible by 9 \n";
-    }
-    else{
-    cout << i << " - not divisible by 9 \n";
-    }
-    }
-    }
-//--------------------------RISING AND FALLING STARS---------------------------------------------
+    char letters[] = { 'C', 'o', 'd', 'e', 'L', 'a', 'b' };
+    /*for (int i = 0; i < 4; i++){
+    cout << courses[i] << endl;
+    }*/
 
+    for (auto letter : letters) {
+    cout << letter << endl;
+
+    }
+    }
+------------------------------------INPUT/OUTPUT ARRAY------------------------------------------
     #include <iostream>
-    #include <string>
+    using namespace std;
+
+    int main() {
+    int numbers[6];
+
+    cout << "Enter 5 numbers " << endl;
+
+    //  store input from user to array
+    for (int i = 1; i < 6; i++) {
+    cout << "Enter number " << i << ": ";
+    cin >> numbers[i];
+    }
+
+    cout << "The numbers are: ";
+
+    //  print array elements
+    for (int n = 1; n < 6; n++) {
+    cout << numbers[n] << "  ";
+    }
+
+    return 0;
+    }
+------------------------------------2D ARRAY------------------------------------------
+    #include <iostream>
 
     using namespace std;
+
     int main()
     {
-    for (int i=0; i<5; i++){
-    for(int j=0; j<i; j++){
-    cout << "*";
-    }
-    cout << endl;
-    }
+    string snacks[3][4] = {
+    {"Galaxy milk", "Mars Bar", "Snickers", "Bounty"},
+    {"Flavourd Youghurt", "Oman chips", "Oreo", "Lays"},
+    {"Apple", "Banana","Orange","Pear"}
+    };
 
-    for (int i=5; i>0; i--){
-    for(int j=0; j<i; j++){
-    cout << "*";
+    for (int i = 0; i < 3; i++){
+    for(int j = 0; j < 4; j++){
+    cout << snacks[i][j] << " ";
     }
     cout << endl;
     }
     }
-    
-//--------------------------DESCENDING 5 STARS---------------------------------------------
-
+------------------------------------ARRAY ART------------------------------------------
     #include <iostream>
     #include <string>
-
     using namespace std;
+
     int main()
     {
+    string art[5][5] = {
+    {"-", "-", "-", "-", "-"},
+    {"-", "O", "-", "O","-"},
+    {"-", "^","^","^","-"},
+    {"-", "@","@","@","-"},
+    {"-", "v","v","v","-"},
 
-    for (int i=0; i<6; i++){
-    for(int j=0; j<i; j++){
-    cout << "*";
+    };
+
+    for (int i = 0; i < 5; i++){
+    for(int j = 0; j < 5; j++){
+    cout << art[i][j] << " ";
     }
     cout << endl;
     }
-
-    }
-    
-//--------------------------ASCENDING 7 STARS---------------------------------------------
-
-    #include <iostream>
-    #include <string>
-
-    using namespace std;
-    int main()
-    {
-
-    for (int i=7; i>0; i--){
-    for(int j=0; j<i; j++){
-    cout << "*";
-    }
-    cout << endl;
-    }
-
     }
