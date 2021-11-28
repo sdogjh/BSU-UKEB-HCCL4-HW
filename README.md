@@ -3,100 +3,100 @@ only in .txt
 
 ------------------------------------1000 RANDOM/COUNT NUMBER 6---------------------------------------
 
-  #include <iostream>
-  #include <array>
-  #include <algorithm>
-  #include <time.h>
-  using namespace std;
+    #include <iostream>
+    #include <array>
+    #include <algorithm>
+    #include <time.h>
+    using namespace std;
 
-  int main()
-  {
-  srand(time(0));
-  int randomArr[1000], x = 0, i;
-  for (int i = 0; i < 1000; i++)
-  {
-  randomArr[i] = rand() % 100 + 1;
-  cout << randomArr[i] << "  ";
+    int main()
+    {
+    srand(time(0));
+    int randomArr[1000], x = 0, i;
+    for (int i = 0; i < 1000; i++)
+    {
+    randomArr[i] = rand() % 100 + 1;
+    cout << randomArr[i] << "  ";
 
-  if (randomArr[i] == 6) {
-  x++;
-  }
-  else {
-  continue;
-  }
-  }
-  cout << "\n\nTotal occurence of number 6: " << x;
-  }
+    if (randomArr[i] == 6) {
+    x++;
+    }
+    else {
+    continue;
+    }
+    }
+    cout << "\n\nTotal occurence of number 6: " << x;
+    }
 
 ------------------------------------FIND LARGEST NUMBER------------------------------------------
 
-  #include <iostream>
-  #include <array>
-  #include <algorithm>
-  using namespace std;
+      #include <iostream>
+    #include <array>
+    #include <algorithm>
+    using namespace std;
 
-  int main()
-  {
-  int numbers[11];
-  int i, n;
+    int main()
+    {
+    int numbers[11];
+    int i, n;
 
-  cout << "Enter 10 numbers " << endl;
+    cout << "Enter 10 numbers " << endl;
 
-  //  store input from user to array
-  for (i = 1; i < 11; i++) {
-  cout << "Enter number " << i << ": ";
-  cin >> numbers[i];
-  }
+    //  store input from user to array
+    for (i = 1; i < 11; i++) {
+    cout << "Enter number " << i << ": ";
+    cin >> numbers[i];
+    }
 
-  cout << "The numbers are: ";
+    cout << "The numbers are: ";
 
-  //  print array elements
-  for (n = 1; n < 11; n++) {
-  cout << numbers[n] << "  ";
-  }
+    //  print array elements
+    for (n = 1; n < 11; n++) {
+    cout << numbers[n] << "  ";
+    }
 
-  // print largest number
-  for(i = 1; i < n; i++)
-  {
-  if(numbers[0] < numbers[i]) // compare if number in index is less than the numbers user input.
-  numbers[0] = numbers[i]; // make number in index as number of user input.
-  }
-  cout << "\n\nLargest number = " << numbers[0];
-  }
-  
+    // print largest number
+    for(i = 1; i < n; i++)
+    {
+    if(numbers[0] < numbers[i]) // compare if number in index is less than the numbers user input.
+    numbers[0] = numbers[i]; // make number in index as number of user input.
+    }
+    cout << "\n\nLargest number = " << numbers[0];
+    }
+
 ------------------------------------FIND SMALLEST NUMBER------------------------------------------
 
-  #include <iostream>
-  #include <array>
-  #include <algorithm>
-  
-  using namespace std;
+      #include <iostream>
+    #include <array>
+    #include <algorithm>
 
-  int main()
-  {
-  int numbers[11];
-  int i, n;
+    using namespace std;
 
-  cout << "Enter 10 numbers " << endl;
+    int main()
+    {
+    int numbers[10];
+    int i, n;
 
-  //  store input from user to array
-  for (i = 1; i < 11; i++) {
-  cout << "Enter number " << i << ": ";
-  cin >> numbers[i];
-  }
+    cout << "Enter 10 numbers " << endl;
 
-  cout << "The numbers are: ";
+    //  store input from user to array
+    for (i = 0; i < 10; i++) {
+    cout << "Enter number " << i << ": ";
+    cin >> numbers[i];
+    }
 
-  //  print array elements
-  for (n = 1; n < 11; n++) {
-  cout << numbers[n] << "  ";
-  }
+    cout << "The numbers are: ";
 
-  // print largest number
-  for(i = 1; i < n; i++)
-  {
-  if(numbers[0] < numbers[i]) // compare if number in index is less than the numbers user input.
-  numbers[0] = numbers[i]; // make number in index as number of user input.
-  }
-  cout << "\n\nLargest number = " << numbers[0];
-  }
+    //  print array elements
+    for (n = 0; n < 10; n++) {
+    cout << numbers[n] << "  ";
+    }
+
+    // print smallest number
+    for(i = 0; i > n; i++)
+    {
+    if(numbers[0] < numbers[i]) // compare if number in index is less than the numbers user input.
+    numbers[0] = numbers[i]; // make number in index as number of user input.
+    }
+    cout << "\n\nLargest number = " << numbers[0];
+    }
