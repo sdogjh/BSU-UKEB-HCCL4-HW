@@ -1,114 +1,102 @@
-# Nov-25-2021-L13ExercisesProblems
+# Nov-28-2021-L14ExercisesProblems
 only in .txt
 
-------------------------------------RANGED BASED FOR LOOP----------------------------------------------
+------------------------------------1000 RANDOM/COUNT NUMBER 6---------------------------------------
 
-    #include <iostream>
+  #include <iostream>
+  #include <array>
+  #include <algorithm>
+  #include <time.h>
+  using namespace std;
 
-    using namespace std;
+  int main()
+  {
+  srand(time(0));
+  int randomArr[1000], x = 0, i;
+  for (int i = 0; i < 1000; i++)
+  {
+  randomArr[i] = rand() % 100 + 1;
+  cout << randomArr[i] << "  ";
 
-    int main()
-    {
-    //RANGE BASED FOR LOOP
+  if (randomArr[i] == 6) {
+  x++;
+  }
+  else {
+  continue;
+  }
+  }
+  cout << "\n\nTotal occurence of number 6: " << x;
+  }
 
-    string courses[] = { "BSU CC", "BSU BA", "HNC CC", "HND" };
-    for (int i = 0; i < 4; i++){
-    cout << courses[i] << endl;
-    }
+------------------------------------FIND LARGEST NUMBER------------------------------------------
 
-    /* OR CAN USE THIS INSTEAD OF TRADITIONAL FOR LOOP
-    for (auto course : courses) {
-    cout << course << endl;
-    */
-    }
+  #include <iostream>
+  #include <array>
+  #include <algorithm>
+  using namespace std;
 
-------------------------------------AUTO KEY WORD------------------------------------------
+  int main()
+  {
+  int numbers[11];
+  int i, n;
 
-    // Example program
-    #include <iostream>
+  cout << "Enter 10 numbers " << endl;
 
-    using namespace std;
+  //  store input from user to array
+  for (i = 1; i < 11; i++) {
+  cout << "Enter number " << i << ": ";
+  cin >> numbers[i];
+  }
 
-    int main()
-    {
+  cout << "The numbers are: ";
 
-    char letters[] = { 'C', 'o', 'd', 'e', 'L', 'a', 'b' };
-    /*for (int i = 0; i < 4; i++){
-    cout << courses[i] << endl;
-    }*/
+  //  print array elements
+  for (n = 1; n < 11; n++) {
+  cout << numbers[n] << "  ";
+  }
 
-    for (auto letter : letters) {
-    cout << letter << endl;
+  // print largest number
+  for(i = 1; i < n; i++)
+  {
+  if(numbers[0] < numbers[i]) // compare if number in index is less than the numbers user input.
+  numbers[0] = numbers[i]; // make number in index as number of user input.
+  }
+  cout << "\n\nLargest number = " << numbers[0];
+  }
+  
+------------------------------------FIND SMALLEST NUMBER------------------------------------------
 
-    }
-    }
-------------------------------------INPUT/OUTPUT ARRAY------------------------------------------
+  #include <iostream>
+  #include <array>
+  #include <algorithm>
+  
+  using namespace std;
 
-    #include <iostream>
-    using namespace std;
+  int main()
+  {
+  int numbers[11];
+  int i, n;
 
-    int main() {
-    int numbers[6];
+  cout << "Enter 10 numbers " << endl;
 
-    cout << "Enter 5 numbers " << endl;
+  //  store input from user to array
+  for (i = 1; i < 11; i++) {
+  cout << "Enter number " << i << ": ";
+  cin >> numbers[i];
+  }
 
-    //  store input from user to array
-    for (int i = 1; i < 6; i++) {
-    cout << "Enter number " << i << ": ";
-    cin >> numbers[i];
-    }
+  cout << "The numbers are: ";
 
-    cout << "The numbers are: ";
+  //  print array elements
+  for (n = 1; n < 11; n++) {
+  cout << numbers[n] << "  ";
+  }
 
-    //  print array elements
-    for (int n = 1; n < 6; n++) {
-    cout << numbers[n] << "  ";
-    }
-
-    return 0;
-    }
-------------------------------------2D ARRAY------------------------------------------
-
-    #include <iostream>
-
-    using namespace std;
-
-    int main()
-    {
-    string snacks[3][4] = {
-    {"Galaxy milk", "Mars Bar", "Snickers", "Bounty"},
-    {"Flavourd Youghurt", "Oman chips", "Oreo", "Lays"},
-    {"Apple", "Banana","Orange","Pear"}
-    };
-
-    for (int i = 0; i < 3; i++){
-    for(int j = 0; j < 4; j++){
-    cout << snacks[i][j] << " ";
-    }
-    cout << endl;
-    }
-    }
-------------------------------------ARRAY ART------------------------------------------
-
-    #include <iostream>
-    #include <string>
-    using namespace std;
-
-    int main()
-    {
-    string art[5][5] = {
-    {"-", "-", "-", "-", "-"},
-    {"-", "O", "-", "O","-"},
-    {"-", "^","^","^","-"},
-    {"-", "@","@","@","-"},
-    {"-", "v","v","v","-"},
-
-    };
-
-    for (int i = 0; i < 5; i++){
-    for(int j = 0; j < 5; j++){
-    cout << art[i][j] << " ";
-    }
-    cout << endl;
-    }
-    }
+  // print largest number
+  for(i = 1; i < n; i++)
+  {
+  if(numbers[0] < numbers[i]) // compare if number in index is less than the numbers user input.
+  numbers[0] = numbers[i]; // make number in index as number of user input.
+  }
+  cout << "\n\nLargest number = " << numbers[0];
+  }
