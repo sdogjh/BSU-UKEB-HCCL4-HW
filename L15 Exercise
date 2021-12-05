@@ -1,1 +1,18 @@
+# Dec-05-2021-L15ExercisesProblems
+only in .txt
 
+//--------------------------MATH LIB (USER INPUT)----------------------------------
+
+    #include <iostream>
+    #include <string>
+
+    using namespace std;
+    int main()
+    {
+
+    double num;
+    cout << "Enter number to calculate its square-root and cube-root: ";
+    cin >> num;
+    cout << "The cube root of " << num << " is " << cbrt(num) << endl;
+    cout << "The square-root of " << num << " is " << sqrt(num) << endl;
+    }
