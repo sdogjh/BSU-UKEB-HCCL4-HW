@@ -17,3 +17,21 @@ only in .txt
     cout << "The cube root of " << num << " is " << cbrt(num) << endl;
     cout << "The square-root of " << num << " is " << sqrt(num) << endl;
     }
+    
+//--------------------------MATH LIB (USER INPUT)----------------------------------
+    #include <iostream>
+    using namespace std;
+
+    void hello() //define
+    {
+    cout << "Welcome to my program\n";
+    }
+    void goodbye() //define
+    {
+    cout << "\nEnd of program";
+    }
+
+    int main() {
+    hello(); //call
+    goodbye(); //call
+    }
