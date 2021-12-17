@@ -15,4 +15,4 @@
   
   # -Chapter 7 covers Lecture 15.
 
-# [Lets go to Quora](https://www.quora.com)
+# [go](http://stackoverflow.com){:target="_blank" rel="noopener"}
