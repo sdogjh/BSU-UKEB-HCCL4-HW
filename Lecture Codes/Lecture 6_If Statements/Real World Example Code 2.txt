@@ -1,0 +1,13 @@
+bool monday = true; 
+bool sunday = false;
+
+if(monday == true)
+{
+cout << "Set alarm for 10 gotta be in CodeLab 1" << endl;
+}
+else if(sunday == true){
+cout << "Set alarm for 10 gotta be in CodeLab 1" << endl;
+}
+else {
+{cout << “No session for codelab 1" << endl;
+}

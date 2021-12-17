@@ -1,0 +1,12 @@
+Step1: Start 
+Step2: Fill the Kettle
+Step3: Turn on the power
+Step4: Has kettle boiled? If yes then go to step 5 else wait at step 4
+Step5:Add tea bag to cup
+Step6: Pour water into cup
+Step7: Do they want milk? If yes then go to step 8 else go to step 9
+Step8:Add milk to cup
+Step9:Do they want sugar? If yes then go to step 10 else go to step 11
+Step10:Add sugar to cup
+Step11:Stir
+Step12:End

@@ -1,0 +1,6 @@
+int brotherA = 15;
+int brotherB = 12;
+if ( ! (brotherA < brotherB) ) {
+cout << "Brother A is older" <<
+endl;
+}

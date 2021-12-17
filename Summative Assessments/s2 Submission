@@ -1,0 +1,115 @@
+/******************************************************************************
+
+                            FACTORIAL CODE (WHILE LOOP)
+
+*******************************************************************************/
+
+2.	#include <iostream>
+3.	#include <stdexcept> 
+4.	#include <limits> 
+5.	#include <string>
+6.	using namespace std;
+7.	
+8.	int main() {
+9.	
+10.	    int n, j = 1, i = 1;
+11.	    string name;
+12.	    cout << "Enter your name: ";
+13.	    getline(cin, name);
+14.	    cout << "Enter The Number to find its Factorial: ";
+15.	    cin >> n;
+16.	    while (cin.fail())
+17.	    {
+18.	        cout << "Input error. Try again: ";
+19.	        cin.clear();
+20.	        cin.ignore();
+21.	    }
+22.	    while (i <= n)
+23.	    {
+24.	        j = j * i;
+25.	        i++;
+26.	    }
+27.	    cout << "\n\nFull Name: " << name << "\n";
+28.	    cout << "The Factorial of " << n << " is " << j;
+29.	
+30.	}
+
+
+/******************************************************************************
+
+                            TABLE (DO WHILE LOOP)
+
+*******************************************************************************/
+
+32.	#include <iostream>
+33.	#include <stdexcept> 
+34.	#include <limits>
+35.	using namespace std;
+36.	
+37.	int main()
+38.	{
+39.	int input, i = 0;
+40.	 string name;
+41.	    cout << "Enter your name: ";
+42.	    getline (cin, name);
+43.	cout << "Enter a number you want the table of: ";
+44.	cin >> input;
+45.	while (cin.fail()) 
+46.	    {
+47.	        cout << "Input error, exiting program.... ";
+48.	        cin.clear(); 
+49.	        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+50.	        exit(1);
+51.	    }
+52.	    
+53.	cout << "\n\nFull Name: " << name << "\n";
+54.	cout << "Displaying tables of " << input << "."<< "\n";
+55.	do
+56.	{
+57.	cout << i << "*" << input << " = " << input*i <<endl;
+58.	i++;
+59.	
+60.	}
+61.	while(i <= 10);
+62.	return 0;
+63.	}
+
+/******************************************************************************
+
+                            POWER 1-10 (FOR LOOP)
+
+*******************************************************************************/
+
+
+65.	#include<iostream>
+66.	#include <math.h>
+67.	#include <stdexcept> 
+68.	#include <limits> 
+69.	#include <string>
+70.	using namespace std;
+71.	int main()
+72.	{
+73.	    int n = 1, i;
+74.	    string name;
+75.	    cout << "Enter your name: ";
+76.	    getline(cin, name);
+77.	    cout << "enter a number to get its power from 1 to 10: ";
+78.	    cin >> n;
+79.	    if (cin.fail()) {
+80.	        cout << "Input error. closing program. ";
+81.	        cin.clear();
+82.	        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+83.	        exit(1);
+84.	    }
+85.	    cout << "\n\nFull Name: " << name << "\n";
+86.	    for (i = 0; i < 11; i++) {
+87.	
+88.	        int power = pow(n, i);
+89.	        cout << n << " To the power of " << i << " is: " << power << endl;
+90.	
+91.	    }
+92.	    return 0;
+93.	}
+94.	
+
+

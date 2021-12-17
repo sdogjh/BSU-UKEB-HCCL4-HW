@@ -1,0 +1,9 @@
+step 1: start;
+step 2: declare int a,b,results;
+step 3: ask for user input a;
+step 4: store value in a;
+step 5: ask for user input b;
+step 6: store value in b;
+step 7: assign results as a storage for adding a and b;
+step 8: print results;
+step 9: end;

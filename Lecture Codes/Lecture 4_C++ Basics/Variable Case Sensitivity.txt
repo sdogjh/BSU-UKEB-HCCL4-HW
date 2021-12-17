@@ -1,0 +1,3 @@
+int total1 = 10;
+// these two variables are not the same  
+int Total = 10;

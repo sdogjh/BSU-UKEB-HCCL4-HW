@@ -1,0 +1,17 @@
+Void main()
+{
+Instruction 1;
+Instruction 2;  
+if(condition){
+//statements
+}
+Instruction 3;
+}
+
+
+//EXAMPLE
+int x = 9;
+
+if (x == 7) {
+cout << "x IS equal to 7" << endl;
+}

@@ -1,0 +1,7 @@
+bool hasVisa = false;
+bool hasDrivingLicense = true;
+
+if ( (hasVisa == true) || (hasDrivingLicense == true) ) {  cout << "You are permitted to drive" << endl;
+} else {
+cout << "Sorry, you can’t" << endl;
+}

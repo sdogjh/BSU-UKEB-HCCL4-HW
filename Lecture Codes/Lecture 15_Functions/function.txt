@@ -1,0 +1,44 @@
+// Example program
+#include <iostream>
+#include <string>
+#include <math.h> // must be included
+using namespace std;
+
+void welcome(){
+cout << " Welcome to BSU" << endl;
+}
+
+
+//calling it 
+// Example program
+#include <iostream>
+#include <string>
+#include <math.h> // must be included
+using namespace std;
+
+void welcome(){
+cout << " Welcome to BSU" << endl;
+}
+int main(){
+welcome();
+return 0;
+}
+
+
+
+
+//some explanation and stuff
+// Example program
+#include <iostream>
+#include <string>
+#include <math.h> // must be included
+using namespace std;
+
+void welcome(); //function declaration
+int main(){
+welcome(); //function call
+return 0;
+}
+void welcome(){ //function definition
+cout << " Welcome to BSU" << endl;
+}

@@ -1,0 +1,33 @@
+// Example program
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+    
+   int ages[5];
+
+   ages[0] = 19;
+    ages[1] = 23;
+     ages[2] = 22;
+      ages[3] = 30;
+       ages[4] = 18;
+
+
+       int array[5] = {19, 23, 22, 30, 18};
+       
+
+       /*DAYS OF MONTH ARRAY
+        string month[13] = { "No month exists on 0", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+
+        cout << month[12];
+        */
+
+        /*
+    int heartRate[] = { 54 , 60, 71, 59, 62, 63, 60, 58 };
+    for (int i = 0; i < 8; i++) {
+        cout << heartRate[i] << endl;
+    }
+    */
+}

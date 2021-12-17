@@ -1,0 +1,97 @@
+else if switch CODE 1
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <stdexcept> //just in case the stdlimits is not working
+#include <limits> //just in case the stdlimits is not working
+
+using namespace std;
+
+int main()
+{
+int transport;
+char ans;
+cout << "---UAE TRANSPORT SERVICE---\n 1. Abu Dhabi\n 2. Sharjah\n 3. Ajman\n 4. Dubai\nPlease enter your location(1-4): ";
+cin >> transport;
+if (cin.fail())
+  {
+  cin.clear();
+  cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+  cout << "Invalid input, closing program....";
+  }
+    else {
+        switch (transport){
+        case 1:
+        cout << "\nLOCATION: Abu Dhabi\nTRANSPORT FEE: 1000 AED \n\nDo you want to avail the transportation? (Y/N): ";
+        cin >> ans;
+        if (ans == 'Y' || ans == 'y'){
+            cout << "\nTransportation confirmed. Thank you for choosing UAE Transport Service.";
+            break;
+        }
+        else if (ans == 'n' || ans == 'N'){
+            cout << "\nTransportation has been cancelled.";
+            break;
+        }
+        else {
+            cout <<"\nInvalid Input. Transportation is automatically cancelled.";
+        break;
+        }
+        case 2:
+        cout << "\nLOCATION: Sharjah\nTRANSPORT FEE: 500 AED \n\nDo you want to avail the transportation? (Y/N): ";
+        cin >> ans;
+        if (ans == 'Y' || ans == 'y'){
+            cout << "\nTransportation confirmed. Thank you for choosing UAE Transport Service.";
+            break;
+        }
+        else if (ans == 'n' || ans == 'N'){
+            cout << "\nTransportation has been cancelled.";
+            break;
+        }
+        else {
+            cout <<"\nInvalid Input. Transportation is automatically cancelled.";
+        break;
+        }
+        case 3:
+        cout << "\nLOCATION: Ajman\nTRANSPORT FEE: 390 AED \n\nDo you want to avail the transportation? (Y/N): ";
+        cin >> ans;
+        if (ans == 'Y' || ans == 'y'){
+            cout << "\nTransportation confirmed. Thank you for choosing UAE Transport Service.";
+            break;
+        }
+        else if (ans == 'n' || ans == 'N'){
+            cout << "\nTransportation has been cancelled.";
+            break;
+        }
+        else {
+            cout <<"\nInvalid Input. Transportation is automatically cancelled.";
+        break;
+        }
+        case 4:
+        cout << "\nLOCATION: Dubai\nTRANSPORT FEE: 650 AED \n\nDo you want to avail the transportation? (Y/N): ";
+        cin >> ans;
+        if (ans == 'Y' || ans == 'y'){
+            cout << "\nTransportation confirmed. Thank you for choosing UAE Transport Service.";
+            break;
+        }
+        else if (ans == 'n' || ans == 'N'){
+            cout << "\nTransportation has been cancelled.";
+            break;
+        }
+        else {
+            cout <<"\nInvalid Input. Transportation is automatically cancelled.";
+        break;
+        }
+         default: {
+  cout << "\n\nInvalid Input. Exiting Program....";
+  }    
+        }
+    }
+
+
+}

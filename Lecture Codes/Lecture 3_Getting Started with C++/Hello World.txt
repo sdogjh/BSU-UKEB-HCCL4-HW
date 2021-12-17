@@ -1,0 +1,41 @@
+#include <iostream>  
+using namespace std;
+
+int main(){
+cout << "Hello World" << endl;
+
+return 0;
+}
+
+
+
+/*PROCESSOR DIRECTIVE AND DECLARATION OF NAMESPACE
+#include <iostream> // preprocessor directive - include iostream file  
+using namespace std; // declare use of the standard namespace
+
+int main(){
+cout << "Hello World" << endl;
+
+return 0;
+}
+
+*/
+
+/* DECLARING WITHOUT NAMESPACE 
+#include <iostream> // preprocessor directive - include iostream file
+
+int main(){
+// std:: is required if declaring using namespace std at the  beginning
+std::cout << "Hello World" << std::endl;  return 0;
+}
+
+
+/*FUNCTION BODY
+#include <iostream> // preprocessor directive - include iostream file  using namespace std; // declare use of the standard namespace
+
+int main(){ // define main function
+cout << "Hello World" << endl; // output statement
+
+return 0;
+}
+*/

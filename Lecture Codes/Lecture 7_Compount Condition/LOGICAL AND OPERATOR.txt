@@ -1,0 +1,6 @@
+int porridgeTemperature = 56;
+
+if ((porridgeTemperature > 40 ) && ( porridgeTemperature < 60 )) {  
+
+cout << "That's just right!" << endl;
+}

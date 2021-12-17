@@ -1,0 +1,18 @@
+if(condition){
+//statements
+}else{
+//statements
+}
+
+
+//EXAMPLE
+int x = 9;
+
+if (x == 7)
+{
+cout << "x IS equal to 7" << endl;
+}
+Else
+{
+cout << "x IS NOT equal to 7" << endl;
+}

@@ -1,0 +1,8 @@
+int myInt = 10;
+double myFirstDouble = 1.235, mySecondDouble =23.5;
+
+myInt = 6;
+myFirstDouble = 2.34;
+mySecondDouble = 1.65;
+
+char myChar = ‘a’;

@@ -1,0 +1,30 @@
+#include <iostream>  
+using namespace std;
+
+int main(){ 
+
+cout << "Hello World" << endl; return 0;
+ }
+
+// COMMENTS
+
+// This is a single line comment
+
+/* This is a block or multi-line comment  It is different to a single line comment  Because it has multiple lines */
+/*
+main.cpp  HelloWorld
+
+This program displays text message “Hello World”*/
+
+//VARIABLE NAMES
+string userName = “Alpha";
+int studentID = 12;
+string studentName = “ beta”;
+
+int a = 12;
+
+//CAMEL CASE
+int myNumber = 8;
+
+
+

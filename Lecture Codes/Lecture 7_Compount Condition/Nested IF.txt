@@ -1,0 +1,9 @@
+if ( condition1 ) {
+	if ( condition 2 ) {
+		do something;
+} else {
+	do something;
+}
+} else {
+	do something;
+}

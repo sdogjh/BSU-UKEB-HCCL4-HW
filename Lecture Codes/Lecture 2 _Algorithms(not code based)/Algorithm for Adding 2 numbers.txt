@@ -1,0 +1,5 @@
+Step1: Start 
+Step2: Read values 2,6
+Step3: Add values of A and B and Store the value in C; C=2+6
+Step4: Print C 
+Step6: End

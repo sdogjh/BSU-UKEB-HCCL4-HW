@@ -1,0 +1,77 @@
+// Oct-17-France(SWITCH).cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+char input;
+
+cout << "What is the Capital of France? \n \n a) Paris \n b) France \n c) Nice \n \n Enter your answer: ";
+
+cin >> input;
+
+switch (input)
+
+{
+
+case 'a':
+
+cout << "\n Correct!";
+
+break;
+
+
+case 'b':
+
+cout << "\n Wrong.";
+
+break;
+
+
+case 'c':
+
+cout << "\n Nope.";
+
+break;
+
+default:
+
+cout << "\n Invalid Input.";
+
+}
+
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+cout << "What is 2+2?\n";
+int a;
+cin >> a;
+switch (a)
+{
+case 4:
+{
+cout << "You're right! it's 4";
+break;
+}
+case 1:
+case 2:
+case 3:
+{
+default:
+cout << "You really need to work on your calculations" << endl;
+break;
+}
+}}
+

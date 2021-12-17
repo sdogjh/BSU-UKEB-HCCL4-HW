@@ -1,0 +1,6 @@
+Step1: Start 
+Step2: Read/input A and B 
+Step3: If A greater than B then C=A 
+Step4: if B greater than A then C=B 
+Step5: Print C 
+Step6: End

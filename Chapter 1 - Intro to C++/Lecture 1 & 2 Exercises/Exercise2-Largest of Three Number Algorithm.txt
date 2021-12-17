@@ -1,0 +1,17 @@
+step 1: start;
+step 2: declare int a,b,c;
+step 3: ask user for input a;
+step 4: store value in a;
+step 5; ask user for input b;
+step 6; store value in b;
+step 7: ask user for input c;
+step 8: store value in c;
+step 9: if a greater or equal b and a greatuer or equal c;
+step 10: print a is the highest number;
+step 11: if a equals b and a equals c;
+step 12: print no largest number;
+step 13: if b greater or equal a and b greater or equal c;
+step 14: print b is the largest number;
+step 15: if c greater or equal b and c greater or equal a;
+step 16: print c is the largest number;
+step 17: end;

@@ -1,0 +1,7 @@
+bool isRaining = false;
+
+if(isRaining == true){
+cout << "Take an Umbrella" << endl;
+}else{
+cout << "Leave the Umbrella" << endl;
+}

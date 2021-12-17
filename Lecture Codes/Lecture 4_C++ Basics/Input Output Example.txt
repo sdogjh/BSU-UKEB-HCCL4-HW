@@ -1,0 +1,5 @@
+cout << "Enter Your Age: ";
+
+int age;  cin >> age;
+
+cout << "Your age is: " << age << endl;

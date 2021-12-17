@@ -1,0 +1,12 @@
+type variable_name = initial_value;
+
+// e.g...
+
+int myInt = 10;
+double myFirstDouble = 1.235, mySecondDouble = 5.678;
+
+
+//ALTERNATE WAYS TO INITIALISE VARIABLES
+int myInt = 10;
+int mySecondInt(6);  
+int myThirdInt{9};

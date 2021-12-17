@@ -1,0 +1,101 @@
+//int
+#include <iostream>
+
+using namespace std;
+
+
+ int myCalc (int num){
+     num *= 2;
+     num +=8;
+     return num;
+ }
+ 
+int main()
+{
+int num;
+cout << "enter a number: ";
+cin >> num;
+num = myCalc(num);
+cout << num;
+}
+
+
+
+
+
+
+
+
+
+
+
+//void
+#include <iostream>
+
+using namespace std;
+
+
+ void myCalc (int num){
+     num *= 2;
+     num +=8;
+     cout << num;
+ }
+ 
+int main()
+{
+int num;
+cout << "enter a number: ";
+cin >> num;
+myCalc(num);
+}
+
+
+
+//string function
+#include <iostream>
+
+using namespace std;
+
+string greeting(int time){
+    if (time < 12){
+        return "Good morning!";
+    }
+    else{
+        return "Good Afternoon!";
+    }
+}
+int main()
+{
+cout << "What time is it? ";
+int userInput;
+cin >> userInput;
+cout << greeting(userInput) << endl;
+}
+
+
+
+
+//integer function
+#include <iostream>
+
+using namespace std;
+
+
+double sumItem(double item1, double item2){
+    double total = item1 + item2;
+    return total;
+}
+int main()
+{
+double myMoney = 40.00;
+double shoes = 25.99;
+double tshirt= 11.50;
+if (sumItem(shoes, tshirt) <= myMoney){
+     cout << "you can affored these items";
+}
+else{
+    cout <<"Keep saving up.";
+}
+}
+
+
