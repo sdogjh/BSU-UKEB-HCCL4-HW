@@ -1,0 +1,508 @@
+#include <iostream>
+#include <string.h>
+#include <stdexcept>
+#include <limits>
+using namespace std;
+
+void menuDisplay() {
+	cout << "||==========================CAFE MENU========================================||\n";
+	string menu[4][4] = {
+		{"      Coffee", "        Price(AED)", "||              Tea", "            Price(AED)"},
+		{"  1. Ice Coffee", "        3", "      ||          1. Ice Tea", "             3"},
+		{"  2. Milk Coffee", "       2","      ||          2. Milk Tea","            2"},
+		{"  3. Black Coffee", "      1","      ||          3. Black Tea","           1",},
+
+
+	};
+
+	for (int row = 0; row < 4; row++) {
+		for (int col = 0; col < 4; col++) {
+			cout << menu[row][col] << " ";
+		}
+		cout << endl;
+	}
+	cout << "||==========================CAFE MENU========================================||\n";
+}
+
+
+void ordering() {
+	cout << "\n\n                Hello Welcome to Our Cafe! \n\nWhich type of drink would you like to order('C' for Coffee || 'T' for Tea): ";
+	char orderInput;
+	char ansForSugar;
+	int orderInputType;
+	int pay;
+	cin >> orderInput;
+	if (orderInput == 'C' || orderInput == 'c') {
+		cout << "\nSuccessfully selected Coffee.\n\nSelect which type of Coffee Drink you want (Input Only Numbers Displayed From Menu): ";
+		cin >> orderInputType;
+		switch (orderInputType) {
+		case 1:
+		{
+			cout << "\n\nSuccessfully selected Ice Coffee.\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 3 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 3 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 3;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		case 2:
+		{
+			cout << "\n\nSuccessfully selected Milk Coffee.\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 2 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 2 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 2;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		case 3:
+		{
+			cout << "\n\nSuccessfully selected Black Coffee.\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 1 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 1 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 1;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		default:
+		{
+			cout << "The input is not displayed in the menu, please try again.";
+			break;
+		}
+		}
+	}
+	else if (orderInput == 'T' || orderInput == 't') {
+		cout << "\nYou Have Ordered a Tea!\n\nSelect which type of Tea Drink you want (Input Only Numbers Displayed From Menu): ";
+		cin >> orderInputType;
+		switch (orderInputType) {
+		case 1:
+		{
+			cout << "\n\nSuccessfully selected Ice Tea!\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 3 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 3 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 3;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		case 2:
+		{
+			cout << "Successfully selected Milk Tea!\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 2 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 2 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 2;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		case 3:
+		{
+			cout << "Successfully selected Black Tea!\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 1 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 1 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 1;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		default:
+		{
+			cout << "The input is not displayed in the menu, please try again.";
+			break;
+		}#include <iostream>
+#include <string.h>
+#include <stdexcept>
+#include <limits>
+using namespace std;
+
+void menuDisplay() {
+	cout << "||==========================CAFE MENU========================================||\n";
+	string menu[4][4] = {
+		{"      Coffee", "        Price(AED)", "||              Tea", "            Price(AED)"},
+		{"  1. Ice Coffee", "        3", "      ||          1. Ice Tea", "             3"},
+		{"  2. Milk Coffee", "       2","      ||          2. Milk Tea","            2"},
+		{"  3. Black Coffee", "      1","      ||          3. Black Tea","           1",},
+
+
+	};
+
+	for (int row = 0; row < 4; row++) {
+		for (int col = 0; col < 4; col++) {
+			cout << menu[row][col] << " ";
+		}
+		cout << endl;
+	}
+	cout << "||==========================CAFE MENU========================================||\n";
+}
+
+
+void ordering() {
+	cout << "\n\n                Hello Welcome to Our Cafe! \n\nWhich type of drink would you like to order('C' for Coffee || 'T' for Tea): ";
+	char orderInput;
+	char ansForSugar;
+	int orderInputType;
+	int pay;
+	cin >> orderInput;
+	if (orderInput == 'C' || orderInput == 'c') {
+		cout << "\nSuccessfully selected Coffee.\n\nSelect which type of Coffee Drink you want (Input Only Numbers Displayed From Menu): ";
+		cin >> orderInputType;
+		switch (orderInputType) {
+		case 1:
+		{
+			cout << "\n\nSuccessfully selected Ice Coffee.\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 3 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 3 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 3;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		case 2:
+		{
+			cout << "\n\nSuccessfully selected Milk Coffee.\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 2 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 2 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 2;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		case 3:
+		{
+			cout << "\n\nSuccessfully selected Black Coffee.\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 1 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 1 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 1;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		default:
+		{
+			cout << "The input is not displayed in the menu, please try again.";
+			break;
+		}
+		}
+	}
+	else if (orderInput == 'T' || orderInput == 't') {
+		cout << "\nYou Have Ordered a Tea!\n\nSelect which type of Tea Drink you want (Input Only Numbers Displayed From Menu): ";
+		cin >> orderInputType;
+		switch (orderInputType) {
+		case 1:
+		{
+			cout << "\n\nSuccessfully selected Ice Tea!\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 3 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 3 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 3;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		case 2:
+		{
+			cout << "Successfully selected Milk Tea!\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 2 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 2 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 2;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		case 3:
+		{
+			cout << "Successfully selected Black Tea!\nWould you like an added sugar? Y/N: ";
+			cin >> ansForSugar;
+			if (ansForSugar == 'y' || ansForSugar == 'Y') {
+				cout << "\n\nSuccessfully added sugar.\nTotal cost is 1 AED. ";
+			}
+			else if (ansForSugar == 'n' || ansForSugar == 'N') {
+				cout << "\n\nUnderstandable, no added sugar.\nTotal cost is 1 AED. ";
+			}
+			else {
+				cout << "\n\nInput is not recognized, cancelling order.";
+				exit(1);
+			}
+			cout << "\n\nEnter amount to pay: ";
+			cin >> pay;
+			while (cin.fail()) {
+				cout << "\nEnter an appropriate amount: ";
+				cin.clear();
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cin >> pay;
+			}
+			int result = pay - 1;
+			if (result >= 0) {
+				cout << "Change is: " << result << " AED " << " \n\nThank you for your purchase.";
+			}
+			else {
+				cout << "You cannot afford it, enter an appropriate amount next time.";
+			}
+			break;
+		}
+		default:
+		{
+			cout << "The input is not displayed in the menu, please try again.";
+			break;
+		}
+		}
+	}
+	else {
+		cout << "\nUnknown Input, cancelling order. ";
+	}
+}
+
+int main() {
+
+	menuDisplay();
+	ordering();
+
+}
+
+
+		}
+	}
+	else {
+		cout << "\nUnknown Input, cancelling order. ";
+	}
+}
+
+int main() {
+
+	menuDisplay();
+	ordering();
+
+}
+
